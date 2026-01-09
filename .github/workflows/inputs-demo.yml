@@ -6,6 +6,14 @@ on:
         description: choose the env to deploy
         required: true
         default: dev
+        type: choice
+        options:
+        - dev
+        - test
+        - prod
+      artfat_tag:
+        description: choose the git tag to depoly
+        required: true
 jobs:
   inputs-demo:
     runs-on: ubuntu-latest
