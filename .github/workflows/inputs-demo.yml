@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: deploy the App
-        run: echo "deploying the {{inputs.artfat_tag}} Application to ${{ inputs.environment}}"
+        run: echo "deploying the ${{inputs.artfat_tag}} Application to ${{ inputs.environment}}"
   
     
     
