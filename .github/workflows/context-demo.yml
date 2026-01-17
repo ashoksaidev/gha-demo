@@ -8,4 +8,7 @@ jobs:
         run: |
           echo "This workflow is triggered by ${{ github.actor}}"
           echo "The repository name is ${{ github.repository }}"
+
+      - name: print environment variables
+        run: echo "$GITHUB_SHA"
           
